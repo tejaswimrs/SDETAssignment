@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="40.793">
+    <testcase classname="To validate New user sign up and send email functionality" name="New user sign-up" time="14.53">
+        <system-out>
+            <![CDATA[Given I should be in login page.............................................passed
+When I click on signup link.................................................passed
+And I enter First name as "Test"............................................passed
+And I enter Last name as "User61"...........................................passed
+And I enter email id as "a@a.com"...........................................passed
+And I enter username as "testing969"........................................passed
+And I enter password as "testing123"........................................passed
+And I enter confirmpass as "testing123".....................................passed
+And I click on Register button..............................................passed
+Then I should see the confirmation message:.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate New user sign up and send email functionality" name="Send email after registration" time="26.083">
+        <system-out>
+            <![CDATA[Given User is successfully registered.......................................passed
+When I click on profile option..............................................passed
+And I click on inbox option.................................................passed
+And I click on compose button...............................................passed
+And I enter name as "User61"................................................passed
+And I enter subject as "Hi For Testing" in subject box......................passed
+And I enter body of the message:............................................passed
+And I click on send button..................................................passed
+Then I should see confirmation message as "The message has been sent to Test User61 (testing989)".passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
